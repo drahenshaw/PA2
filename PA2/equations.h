@@ -1,9 +1,10 @@
-/*Programmer: David Henshaw
- *Class: CptS 121, Fall 2017, Leb Section 03
- *Programming Assignment: PA2
- *Date: September 11, 2017
- *Description: Header file for PA2 including both standard libraries and custom function declarations
- */
+/**************************************************************************************************************
+ *Programmer: David Henshaw																					  *
+ *Class: CptS 121, Fall 2017, Leb Section 03																  *
+ *Programming Assignment: PA2																				  *
+ *Date: September 11, 2017																					  *
+ *Description: Header file for PA2 including both standard libraries and custom function declarations         *
+***************************************************************************************************************/
 
 #include <stdio.h>
 #include <math.h>

@@ -1,10 +1,37 @@
-/*Programmer: David Henshaw
-*Class: CptS 121, Fall 2017, Leb Section 03
-*Programming Assignment: PA2
-*Date: September 11, 2017
-*Description: Main file to drive prompts for user input and printing output of eight equations.
-*Prompts the user for which values to use in the equation, and uses custom functions to solve for the calculations.
-*/
+/*************************************************************************************************************************
+/*Programmer: David Henshaw																								 *
+ *Class: CptS 121, Fall 2017, Leb Section 03																			 *
+ *Programming Assignment: PA2																							 *
+ *Date: September 11, 2017																								 *
+ *Description: This program evaluates eight different equations based upon user input.									 *
+ *              Prompts the user for which values to use in the equations,												 *
+ *			    and uses custom functions to solve for the calculations.												 *              
+ *              The equations are displayed with the constants and results.											     *
+ *																											             *
+ *              Inputs: acceleration, mass, radius, height,																 *
+ *                      plaintext_character, mass1, mass2, distance, theta,											     *
+ *                      R1, R2, R3, x1, x2, y1, y2,																	     *
+ *                      x, z, a																					         *
+ *              Constants: PI, G																						 *
+ *              Computations: See relevant formulas																         *
+ *              Outputs: force, volume_cylinder, encoded_character,														 *
+ *                       tan_theta, parallel_resistance, distance_points, y												 *
+ *																													     *
+ *              This program does not provide error checking.														     *
+ *              This program contains a custom header and a second source file for custom function definitions.			 *
+ *																														 *
+ * Relevant Formulas: The equations are referenced in the following comments of the program							     *
+ *          (1)Newton's 2nd Law: force = mass_newton * acceleration													     *
+ *          (2)Volume of a cylinder: volume_cylinder = PI * radius^2 * cylinder_height							         *
+ *          (3)Character encoding: encoded_character = 10 + (plaintext_character - 'a') + 'A'							 *
+ *          (4)Gravity: force = G * mass1 * mass2 / distance^2															 *
+ *          (5)Tangent: tan_theta = sin (theta) / cos (theta)															 *
+ *          (6)Total parallel resistance: parallel_resistance = 1 / (1 / R1 + 1 / R2 + 1 / R3)							 *
+ *          (7)Distance between two points: distance_points = square root of ((x1 - x2)^2 +								 *
+ *                                                                            (y1 - y2)^2)								 *
+ *          (8)General equation:  y = (7 / 5) * x / a + z - a / (a % 2) + PI   											 *
+**************************************************************************************************************************/
+
 
 #include "equations.h"
 
@@ -19,7 +46,7 @@ int main(void)
 	scanf("%lf %lf", &mass, &acceleration);																			//Saving of variable values in memory
 	force = calculate_newtons_2nd_law(mass, acceleration);															//Calls first custom defined function passing in variables given by the user
 	printf("Newton's Second Law: Force = Mass * Acceleration = %lf * %lf = %.2lf\n", mass, acceleration, force);	//%.2lf prints the output as a floating-point rounded to the hundreths place
-	printf("\n");																									//The rest of the equations follow the same format: prompt -> save in memory -> call function to calculate output -> print result
+	printf("\n");																									//The rest of the equations follow the same format: prompt -> save in memory -> call function to calculate output -> print result -> print newline
 
 	// 2) Cylindrical Volume Equation
 	printf("Please enter radius and height (floating-point values) for use in cylindrical volume equation: ");

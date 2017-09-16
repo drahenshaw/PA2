@@ -1,10 +1,11 @@
-/*Programmer: David Henshaw
-*Class: CptS 121, Fall 2017, Leb Section 03
-*Programming Assignment: PA2
-*Date: September 11, 2017
-*Description: equations.c file contains the function descriptions for use in doing the calculations for eight equations.
-*Each function description begins with local variable declaration, the calculation for each equation, and then returns the value back to main.c
-*/
+/*******************************************************************************************************************************************************
+ *Programmer: David Henshaw																															   *
+ *Class: CptS 121, Fall 2017, Leb Section 03																										   *
+ *Programming Assignment: PA2																													       *
+ *Date: September 11, 2017																															   *
+ *Description: equations.c file contains the function descriptions for use in doing the calculations for eight equations							   *
+    Each function description begins with local variable declaration, the calculation for each equation, and then returns the value back to main.c	   *
+********************************************************************************************************************************************************/
 
 #include "equations.h"
 
